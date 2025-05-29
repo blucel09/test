@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>음료 주문 시스템</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="order-panel">
+      <h2>주문 인터페이스</h2>
+      <input id="name" type="text" placeholder="이름 입력" />
+      <select id="drink-type">
+        <option value="coffee">커피</option>
+        <option value="ade">에이드</option>
+      </select>
+      <select id="drink"></select>
+      <div id="temp-box">
+        <label><input type="radio" name="temp" value="Hot" checked /> Hot</label>
+        <label><input type="radio" name="temp" value="Ice" /> Ice</label>
+      </div>
+      <button onclick="orderDrink()">주문하기</button>
+      <div id="order-error" class="error"></div>
+    </div>
+    <div class="manage-panel">
+      <h2>주문 관리 패널 (3층)</h2>
+      <ul id="order-list"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
